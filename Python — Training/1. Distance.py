@@ -1,1 +1,1 @@
-dist = lambda points: max(points)-min(points)
+dist = lambda points: max(points) - min(points)

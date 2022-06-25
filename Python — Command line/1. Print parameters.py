@@ -1,1 +1,1 @@
-print(__import__('sys').argv[0])
+print(__import__("sys").argv[0])

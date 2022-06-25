@@ -8,9 +8,8 @@ def select_student(students, threshold):
         else:
             refused.append(i)
     status = {
-        'Accepted': sorted(accepted, key=lambda x: x[-1], reverse=True),
-        'Refused': sorted(refused, key=lambda x: x[-1])}
+        "Accepted": sorted(accepted, key=lambda x: x[-1], reverse=True),
+        "Refused": sorted(refused, key=lambda x: x[-1]),
+    }
 
     return status
-
-

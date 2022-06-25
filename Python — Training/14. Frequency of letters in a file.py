@@ -1,4 +1,4 @@
-with open('words.txt') as f:
+with open("words.txt") as f:
     words = f.read()
 
 frequency = {}
@@ -10,4 +10,4 @@ for i in words:
         frequency[i] = 1
 
 for i in frequency:
-    print('{}: {:.2f}'.format(i, frequency[i]/(len(words))))
+    print("{}: {:.2f}".format(i, frequency[i] / (len(words))))

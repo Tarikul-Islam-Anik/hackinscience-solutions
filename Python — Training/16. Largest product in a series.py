@@ -5,7 +5,7 @@ largest_product = 0
 for i in range(len(numbers) - adjacent_length):
     temp = 1
     for j in range(adjacent_length):
-        temp *= int(numbers[i+j])
+        temp *= int(numbers[i + j])
     if temp > largest_product:
         largest_product = temp
 print(largest_product)

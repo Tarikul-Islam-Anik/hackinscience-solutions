@@ -8,5 +8,5 @@ def sum_digits(n):
 num = [i for i in range(1001) if (i % 7 == 0)]
 
 for i in num:
-    if(sum_digits(i) % 3 == 0):
+    if sum_digits(i) % 3 == 0:
         print(i)

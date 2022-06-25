@@ -28,18 +28,33 @@ def product(num):
     right = 0
     rightdown = 0
     down = 0
-    if not (17 <= i <= 19 or 37 <= i <= 39 or 57 <= i <= 59 or 77 <= i <= 79
-            or 97 <= i <= 99 or 117 <= i <= 119 or 137 <= i <= 139 or 157 <= i <= 159
-            or 177 <= i <= 179 or 197 <= i <= 199 or 217 <= i <= 219 or 237 <= i <= 239
-            or 257 <= i <= 259 or 277 <= i <= 279 or 297 <= i <= 299 or 317 <= i <= 319
-            or 337 <= i <= 339 or 357 <= i <= 359 or 377 <= i <= 379 or 397 <= i <= 399):
+    if not (
+        17 <= i <= 19
+        or 37 <= i <= 39
+        or 57 <= i <= 59
+        or 77 <= i <= 79
+        or 97 <= i <= 99
+        or 117 <= i <= 119
+        or 137 <= i <= 139
+        or 157 <= i <= 159
+        or 177 <= i <= 179
+        or 197 <= i <= 199
+        or 217 <= i <= 219
+        or 237 <= i <= 239
+        or 257 <= i <= 259
+        or 277 <= i <= 279
+        or 297 <= i <= 299
+        or 317 <= i <= 319
+        or 337 <= i <= 339
+        or 357 <= i <= 359
+        or 377 <= i <= 379
+        or 397 <= i <= 399
+    ):
         if i <= 339:
-            rightdown = my_list[i] * my_list[i + 21] * \
-                my_list[i + 42] * my_list[i + 63]
+            rightdown = my_list[i] * my_list[i + 21] * my_list[i + 42] * my_list[i + 63]
         right = my_list[i] * my_list[i + 1] * my_list[i + 2] * my_list[i + 3]
         if i >= 60:
-            rightup = my_list[i] * my_list[i - 19] * \
-                my_list[i - 38] * my_list[i - 57]
+            rightup = my_list[i] * my_list[i - 19] * my_list[i - 38] * my_list[i - 57]
     greatest_product = 0
     if i <= 339:
         down = my_list[i] * my_list[i + 20] * my_list[i + 40] * my_list[i + 60]

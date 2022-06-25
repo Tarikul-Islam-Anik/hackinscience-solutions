@@ -1,2 +1,2 @@
-with open('words.txt', 'r') as f:
+with open("words.txt", "r") as f:
     print(f.readline())
